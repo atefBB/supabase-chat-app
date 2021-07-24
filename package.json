@@ -35,7 +35,6 @@
     "Samarth MN <samarth.m.n@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/atefBB/supabase-chat-app#readme",
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
