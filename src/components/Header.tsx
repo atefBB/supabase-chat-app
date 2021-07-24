@@ -1,19 +1,22 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Layout } from "antd";
-import { GithubOutlined } from "@ant-design/icons";
 import { User } from "@supabase/supabase-js";
+
+import { supabaseClient } from "../service/supabase";
 
 import LoginModal from "./LoginModal";
 import SignUpModal from "./SignUpModal";
-import { supabaseClient } from "../service/supabase";
+
 const { Header: AntHeader } = Layout;
 
 const Header = ({ user }: { user: User | null }) => {
   const [loginModal, setLoginModal] = useState(false);
   const [signUpModal, setSignUpModal] = useState(false);
+
   const onLogout = () => supabaseClient.auth.signOut();
+
   return (
-    <div>
+    <React.Fragment>
       <LoginModal
         isModalOpen={loginModal}
         onClose={() => setLoginModal(false)}
@@ -27,24 +30,12 @@ const Header = ({ user }: { user: User | null }) => {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
+          justifyContent: "end",
         }}
       >
-        <div style={{ color: "white", fontSize: "1.5rem", cursor: "pointer" }}>
-          Chat App Using SupaBase
-          <GithubOutlined
-            style={{ cursor: "pointer", padding: "0 .5em" }}
-            onClick={() =>
-              window.open(
-                "https://github.com/SamarthMN/supabase-chat-app",
-                "_blank"
-              )
-            }
-          />
-        </div>
         <div style={{ display: "flex" }}>
           {!user ? (
-            <>
+            <React.Fragment>
               <div
                 style={{
                   color: "white",
@@ -74,7 +65,7 @@ const Header = ({ user }: { user: User | null }) => {
               >
                 Sign Up
               </div>
-            </>
+            </React.Fragment>
           ) : (
             <div
               style={{ color: "white", fontSize: "1rem", cursor: "pointer" }}
@@ -85,7 +76,7 @@ const Header = ({ user }: { user: User | null }) => {
           )}
         </div>
       </AntHeader>
-    </div>
+    </React.Fragment>
   );
 };
 

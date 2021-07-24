@@ -9,11 +9,13 @@ import {
   Input,
   Button,
 } from "antd";
+
 import useMessage, { MESSAGE } from "../hooks/useMessage";
 
 const MessageList = ({ user }: { user: User | null }) => {
   const { messages, addNewMessage, increaseLimit, loading } = useMessage();
   const formRef = useRef<any>();
+
   const onNewMessage = ({ message }: MESSAGE) => {
     if (user?.id) {
       formRef.current.resetFields();
@@ -24,6 +26,7 @@ const MessageList = ({ user }: { user: User | null }) => {
       messageAnt.error("Enter Message", 2.5);
     }
   };
+
   return (
     <Row justify="center" align="middle">
       <Col xs={22} sm={20} md={16}>

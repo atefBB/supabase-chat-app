@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import { Layout } from "antd";
-import { supabaseClient } from "./service/supabase";
 import { User } from "@supabase/supabase-js";
+import { Layout } from "antd";
+
+import { supabaseClient } from "./service/supabase";
+
 import useAuth from "./hooks/useAuth";
+
 import Header from "./components/Header";
 import MessageList from "./components/MessageList";
 
@@ -27,6 +30,7 @@ const App = () => {
       }
     });
   }, []);
+
   useEffect(() => {
     getSession().then((session) => {
       if (session) {
@@ -37,6 +41,7 @@ const App = () => {
     });
     // eslint-disable-next-line
   }, []);
+
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Header user={user} />
