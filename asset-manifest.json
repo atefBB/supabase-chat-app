@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/supabase-react-chat-app/static/css/main.fad678d6.chunk.css",
-    "main.js": "/supabase-react-chat-app/static/js/main.a4172ffd.chunk.js",
-    "main.js.map": "/supabase-react-chat-app/static/js/main.a4172ffd.chunk.js.map",
-    "runtime-main.js": "/supabase-react-chat-app/static/js/runtime-main.cc350222.js",
-    "runtime-main.js.map": "/supabase-react-chat-app/static/js/runtime-main.cc350222.js.map",
-    "static/css/2.7572b43f.chunk.css": "/supabase-react-chat-app/static/css/2.7572b43f.chunk.css",
-    "static/js/2.ebcbe997.chunk.js": "/supabase-react-chat-app/static/js/2.ebcbe997.chunk.js",
-    "static/js/2.ebcbe997.chunk.js.map": "/supabase-react-chat-app/static/js/2.ebcbe997.chunk.js.map",
-    "static/js/3.e2772a4d.chunk.js": "/supabase-react-chat-app/static/js/3.e2772a4d.chunk.js",
-    "static/js/3.e2772a4d.chunk.js.map": "/supabase-react-chat-app/static/js/3.e2772a4d.chunk.js.map",
-    "index.html": "/supabase-react-chat-app/index.html",
-    "static/css/2.7572b43f.chunk.css.map": "/supabase-react-chat-app/static/css/2.7572b43f.chunk.css.map",
-    "static/css/main.fad678d6.chunk.css.map": "/supabase-react-chat-app/static/css/main.fad678d6.chunk.css.map",
-    "static/js/2.ebcbe997.chunk.js.LICENSE.txt": "/supabase-react-chat-app/static/js/2.ebcbe997.chunk.js.LICENSE.txt"
+    "main.css": "/supabase-chat-app/static/css/main.fad678d6.chunk.css",
+    "main.js": "/supabase-chat-app/static/js/main.a4172ffd.chunk.js",
+    "main.js.map": "/supabase-chat-app/static/js/main.a4172ffd.chunk.js.map",
+    "runtime-main.js": "/supabase-chat-app/static/js/runtime-main.6d45f848.js",
+    "runtime-main.js.map": "/supabase-chat-app/static/js/runtime-main.6d45f848.js.map",
+    "static/css/2.7572b43f.chunk.css": "/supabase-chat-app/static/css/2.7572b43f.chunk.css",
+    "static/js/2.7ecd1665.chunk.js": "/supabase-chat-app/static/js/2.7ecd1665.chunk.js",
+    "static/js/2.7ecd1665.chunk.js.map": "/supabase-chat-app/static/js/2.7ecd1665.chunk.js.map",
+    "static/js/3.e2772a4d.chunk.js": "/supabase-chat-app/static/js/3.e2772a4d.chunk.js",
+    "static/js/3.e2772a4d.chunk.js.map": "/supabase-chat-app/static/js/3.e2772a4d.chunk.js.map",
+    "index.html": "/supabase-chat-app/index.html",
+    "static/css/2.7572b43f.chunk.css.map": "/supabase-chat-app/static/css/2.7572b43f.chunk.css.map",
+    "static/css/main.fad678d6.chunk.css.map": "/supabase-chat-app/static/css/main.fad678d6.chunk.css.map",
+    "static/js/2.7ecd1665.chunk.js.LICENSE.txt": "/supabase-chat-app/static/js/2.7ecd1665.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc350222.js",
+    "static/js/runtime-main.6d45f848.js",
     "static/css/2.7572b43f.chunk.css",
-    "static/js/2.ebcbe997.chunk.js",
+    "static/js/2.7ecd1665.chunk.js",
     "static/css/main.fad678d6.chunk.css",
     "static/js/main.a4172ffd.chunk.js"
   ]
