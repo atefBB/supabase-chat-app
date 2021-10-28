@@ -1,11 +1,14 @@
 {
   "name": "supabase-react-chat-app",
   "version": "1.0.0",
+  "homepage": "https://atefbb.github.io/supabase-chat-app/",
   "description": "Chat app using Supabase & React",
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
@@ -18,16 +21,17 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.6",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "typescript": "^4.0.3",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/uuid": "^8.3.0"
+    "@types/uuid": "^8.3.0",
+    "gh-pages": "^3.2.3",
+    "typescript": "^4.0.3"
   },
   "keywords": ["supabase", "chat-app", "reactjs"],
   "author": [
