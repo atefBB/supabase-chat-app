@@ -1,6 +1,8 @@
-import { Alert, Button, Form, Input, Modal } from "antd";
 import { useState } from "react";
+import { Alert, Button, Form, Input, Modal } from "antd";
+
 import { supabaseClient } from "../service/supabase";
+
 type ON_SUBMIT = {
   email: string;
   password: string;
@@ -18,7 +20,7 @@ const SignUpModal = ({ isModalOpen = false, onClose }: SIGNUP_MODAL) => {
     setLoading(true);
     supabaseClient.auth
       .signUp({ email, password })
-      .then((data) => {
+      .then((data: any) => {
         setLoading(false);
         if (!data.error && data.user) {
           onClose();
@@ -26,7 +28,7 @@ const SignUpModal = ({ isModalOpen = false, onClose }: SIGNUP_MODAL) => {
           setError(data.error.message);
         }
       })
-      .catch((err) => {
+      .catch((err: any) => {
         setError(err);
         setLoading(false);
       });

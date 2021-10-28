@@ -25,7 +25,7 @@ const useMessage = () => {
       .select()
       .order("created_at", { ascending: false })
       .limit(limit)
-      .then((data) => {
+      .then((data: any) => {
         setLoading(false);
         if (!data.error && data.data) {
           data.data.reverse();

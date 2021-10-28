@@ -7,10 +7,11 @@ const useAuth = () => {
   const signUp = (email: string, password: string) =>
     supabaseClient.auth.signUp({ email, password });
 
-  const getSession = async () => {
+  const getSession = () => {
     const session = supabaseClient.auth.session();
     return session;
   };
+
   return {
     signUp,
     signIn,
